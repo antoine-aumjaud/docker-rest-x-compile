@@ -1,3 +1,6 @@
 FROM ubuntu
 
-# RUN apt install 
+RUN apt update -y
+RUN apt install -y build-essential mingw-w64
+RUN apt install -y unzip curl less lsof net-tools sudo git openssl
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
