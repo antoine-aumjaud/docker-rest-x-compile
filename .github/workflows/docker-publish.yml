@@ -16,7 +16,7 @@ on:
 env:
   # github.repository as <account>/<repo>
   DOCKERHUB_USER: antoineaumjaud
-  IMAGE_NAME: antoineaumjaud/rest-x-compile
+  IMAGE_NAME: antoineaumjaud/rust-x-compile
 
 
 jobs:
