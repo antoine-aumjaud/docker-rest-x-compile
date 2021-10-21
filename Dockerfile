@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN apt update -y \
  && apt install -y build-essential mingw-w64 \
- && apt install -y unzip curl less lsof net-tools sudo git openssl ca-certificates vim
+ && apt install -y unzip zip curl less lsof net-tools sudo git openssl ca-certificates vim
 
 ENV PATH="/root/.cargo/bin:${PATH}"
 
