@@ -1,8 +1,11 @@
 FROM ubuntu
 
+CMD echo "Europe/Paris" > /etc/timezone
+
 RUN apt update -y \
  && apt install -y build-essential mingw-w64 \
- && apt install -y unzip curl less lsof net-tools sudo git openssl ca-certificates vim
+ && apt install -y unzip curl less lsof net-tools sudo git openssl ca-certificates vim \
+ && apt install -y osslsigncode
 
 ENV PATH="/root/.cargo/bin:${PATH}"
 
